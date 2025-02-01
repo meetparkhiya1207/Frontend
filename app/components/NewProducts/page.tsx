@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function NewProducts() {
     const products = [
@@ -32,9 +32,12 @@ export default function NewProducts() {
                         >
                             {/* Product Image */}
                             <div className="h-[342px] w-full">
-                                <img
+                                <Image
                                     src={val.img}
                                     alt={`Product ${index + 1}`}
+                                    layout="responsive"
+                                    width={295}  // Set a width for the image
+                                    height={342}  // Set a height for the image
                                     className="w-full h-full object-cover"
                                 />
                             </div>
