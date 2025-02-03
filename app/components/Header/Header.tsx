@@ -19,38 +19,27 @@ const Header = () => {
                     <div className="md:col-span-8 col-span-0">
                         {/* Navbar visible on large screens */}
                         <nav className="hidden md:flex space-x-4">
-                            <Link href="/" passHref>
-                                <a className="text-blue-500 hover:text-blue-700">
-                                    <span className="font-normal font-sans text-[14px]">Home</span>
-                                </a>
+                            <Link href="/" className="text-blue-500 hover:text-blue-700">
+                                <span className="font-normal font-sans text-[14px]">Home</span>
                             </Link>
-                            <Link href="/about" passHref>
-                                <a className="text-gray-700 hover:text-gray-900">
-                                    <span className="font-normal font-sans text-[14px]">About</span>
-                                </a>
+                            <Link href="/about" className="text-gray-700 hover:text-gray-900">
+                                <span className="font-normal font-sans text-[14px]">About</span>
                             </Link>
-                            <Link href="/contact" passHref>
-                                <a className="text-gray-700 hover:text-gray-900">
-                                    <span className="font-normal font-sans text-[14px]">Contact Us</span>
-                                </a>
+                            <Link href="/contact" className="text-gray-700 hover:text-gray-900">
+                                <span className="font-normal font-sans text-[14px]">Contact Us</span>
                             </Link>
                         </nav>
+
                         {/* Mobile navbar */}
                         <nav className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} absolute top-16 left-0 bg-white w-full shadow-lg`}>
-                            <Link href="/" passHref>
-                                <a className="block px-4 py-2 text-blue-500 hover:text-blue-700">
-                                    <span className="font-normal font-sans text-[14px]">Home</span>
-                                </a>
+                            <Link href="/" className="block px-4 py-2 text-blue-500 hover:text-blue-700">
+                                <span className="font-normal font-sans text-[14px]">Home</span>
                             </Link>
-                            <Link href="/about" passHref>
-                                <a className="block px-4 py-2 text-gray-700 hover:text-gray-900">
-                                    <span className="font-normal font-sans text-[14px]">About</span>
-                                </a>
+                            <Link href="/about" className="block px-4 py-2 text-gray-700 hover:text-gray-900">
+                                <span className="font-normal font-sans text-[14px]">About</span>
                             </Link>
-                            <Link href="/contact" passHref>
-                                <a className="block px-4 py-2 text-gray-700 hover:text-gray-900">
-                                    <span className="font-normal font-sans text-[14px]">Contact Us</span>
-                                </a>
+                            <Link href="/contact" className="block px-4 py-2 text-gray-700 hover:text-gray-900">
+                                <span className="font-normal font-sans text-[14px]">Contact Us</span>
                             </Link>
                         </nav>
                     </div>

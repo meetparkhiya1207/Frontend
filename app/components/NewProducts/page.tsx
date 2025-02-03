@@ -1,6 +1,7 @@
-import Image from 'next/image';
+"use client";
+import * as React from 'react';
 
-export default function NewProducts() {
+const NewProducts = () => {
     const products = [
         { img: "/assest/img1.jpg", price: 100, saleprice: 80 },
         { img: "/assest/img2.jpg", price: 120, saleprice: 90 },
@@ -9,7 +10,6 @@ export default function NewProducts() {
         { img: "/assest/img1.jpg", price: 140, saleprice: 100 },
         { img: "/assest/img2.jpg", price: 150, saleprice: 110 },
     ];
-
     return (
         <div className="my-8 px-4">
             {/* Title Section */}
@@ -21,7 +21,6 @@ export default function NewProducts() {
                     Recently added shirts!
                 </span>
             </div>
-
             {/* Product Grid */}
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
@@ -32,21 +31,16 @@ export default function NewProducts() {
                         >
                             {/* Product Image */}
                             <div className="h-[342px] w-full">
-                                <Image
+                                <img
                                     src={val.img}
                                     alt={`Product ${index + 1}`}
-                                    layout="responsive"
-                                    width={295}  // Set a width for the image
-                                    height={342}  // Set a height for the image
                                     className="w-full h-full object-cover"
                                 />
                             </div>
-
                             {/* Product Title */}
                             <div className="px-3 pt-2 text-center">
                                 <h3 className="text-lg font-semibold text-gray-800">Meet Parkhiya</h3>
                             </div>
-
                             {/* Product Price */}
                             <div className="px-3 py-2 text-center flex justify-center items-end gap-2">
                                 <span className="text-xl font-bold text-blue-600">
@@ -63,3 +57,5 @@ export default function NewProducts() {
         </div>
     );
 }
+
+export default NewProducts;
