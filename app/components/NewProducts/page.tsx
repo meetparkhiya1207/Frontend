@@ -43,7 +43,7 @@ const NewProducts = () => {
                             </div>
                             {/* Product Price */}
                             <div className="px-3 py-2 text-center flex justify-center items-end gap-2">
-                                <span className="text-xl font-bold text-blue-600">
+                                <span className="text-xl font-bold text-blue-color">
                                     ${val.saleprice}
                                 </span>
                                 <span className="text-sm text-gray-500 line-through mb-0.5">
