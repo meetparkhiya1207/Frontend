@@ -1,4 +1,5 @@
-export function Benefits() {
+"use client";
+const Benefits = () => {
   return (
     <div className="bg-white py-12">
       <div className="container mx-auto px-4">
@@ -45,3 +46,4 @@ export function Benefits() {
   )
 }
 
+export default Benefits;
